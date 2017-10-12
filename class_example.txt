@@ -1,0 +1,82 @@
+public class Ninja {
+	
+	// member variables - you can put whatever
+	// you think you need to define a Ninja
+	private String name;
+	private int squadNumber;
+	private double chakraCapacity;
+	private String villageResided;
+	
+	/* Constructors */
+	
+	// Default Constructor - used to create an
+	// empty Ninja if you want to set the name
+	// and everything else later
+	public Ninja() {
+		name = "";
+		squadNumber = 0;
+		chakraCapacity = 0.0;
+		villageResided = "";
+	}
+	
+	// Constructor - used to create a Ninja with the 
+	// paramaters given inside the parentheses
+	public Ninja(String name, int squadNumber, 
+			double chakraCapacity, String villageResided) {
+		
+		// "this" refers to the member variables named at
+		// the very top so "this.name" would be the 
+		// one at the very top where it says
+		// "private String name"
+		this.name = name;
+		this.squadNumber = squadNumber;
+		this.chakraCapacity = chakraCapacity;
+		this.villageResided = villageResided;
+	}
+	
+	/* Getters */
+	
+	// make sure that this function type matches
+	// the type of the member variable you are
+	// getting, so in this case String
+	public String getName() {
+		// this is all you need to do for the getters
+		return name;
+	}
+	
+	public int getSquadNumber() {
+		return squadNumber;
+	}
+	
+	public double chakraCapacity() {
+		return chakraCapacity;
+	}
+	
+	public String getVillageResided() {
+		return villageResided;
+	}
+	
+	/* Setters */
+	
+	// make sure the type of parameter in the parentheses
+	// matches the one at the very top that you are setting,
+	// since name is String, the parameter will be
+	// String newName
+	// also keep in mind that setters are always void
+	public void setName(String newName) {
+		// this is all you need to do for the setters
+		name = newName;
+	}
+	
+	public void setSquadNumber(int newSquadNumber) {
+		squadNumber = newSquadNumber;
+	}
+	
+	public void setchakraCapacity(double newCapacity) {
+		chakraCapacity = newCapacity;
+	}
+	
+	public void setVillageResided(String newVillage) {
+		villageResided = newVillage;
+	}
+}

@@ -1,0 +1,11 @@
+Results:
+Got 7/7 and 8/8 points on TestTxHandler tests
+
+Got 21/27 on BlockChain Tests
+Failed Test cases:
+- Process a block with many valid transactions
+- Process a block containing a transaction that claims a UTXO from earlier in its branch that has not yet been claimed
+- Create a block after a valid transaction has been processed that is already in a block in the longest valid branch
+- Create a block after a valid transaction has been processed that uses a UTXO already claimed by a transaction in the longest valid branch
+- Create a block after a valid transaction has been processed that is not a double spend on the longest valid branch and has not yet been included in any other block
+- Process a transaction, create a block, then process a block on top of that block with a transaction claiming a UTXO from that transaction
